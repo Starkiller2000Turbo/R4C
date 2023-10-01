@@ -27,7 +27,10 @@ SECRET_KEY = config('SECRET_KEY', default='KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False) == 'True'
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost 127.0.0.1').split(' ')
+ALLOWED_HOSTS = config(
+    'ALLOWED_HOSTS',
+    default='localhost 127.0.0.1',
+).split(' ')
 
 
 # Application definition
@@ -134,4 +137,4 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.stmp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
