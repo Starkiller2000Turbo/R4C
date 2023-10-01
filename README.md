@@ -58,6 +58,35 @@ pip install -r requirements.txt
 make
 ```
 
+Для работы приложения необходим файл .env:
+
+```
+touch .env
+```
+
+Необходимо заполнить файл .env следующим обазом:
+
+```
+SECRET_KEY=  
+Секретный ключ для работы django.
+
+DEBUG=
+True/False в зависимости от необходимости режима отладки.
+
+ALLOWED_HOSTS= 
+Допустимые хосты, на которых будет работать приложение через пробел. 
+Для локальной работы приложения - localhost и 127.0.0.1. 
+
+EMAIL_HOST_USER=
+Имя пользователя, которое будет использоваться для SMTP-сервера,
+определенного в EMAIL_HOST в файле settings.
+
+EMAIL_HOST_PASSWORD=
+Пароль, который будет использоваться для SMTP-сервера,
+определенного в EMAIL_HOST в файле settings.
+
+```
+
 ### Авторы:
 
 - :white_check_mark: [Starkiller2000Turbo](https://github.com/Starkiller2000Turbo)
