@@ -20,6 +20,7 @@ platformdirs==3.10.0
 pycodestyle==2.11.0
 pydocstyle==6.3.0
 pyflakes==3.1.0
+python-decouple==3.8
 snowballstemmer==2.2.0
 sqlparse==0.4.4
 tomli==2.0.1
