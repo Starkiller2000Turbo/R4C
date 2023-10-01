@@ -1,10 +1,7 @@
 from django.urls import path
 
-from api.v1.views import create_robot
-
-app_name = '%(app_label)s'
-
+from api.v1.views import download_statistic
 
 urlpatterns = [
-    path('', create_robot, name='new_robot'),
+    path('download_statistic/', download_statistic, name='download_statistic'),
 ]
