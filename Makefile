@@ -14,6 +14,7 @@ style:
 
 app: 
 	$(MANAGE) startapp $(name)
+
 migrations:
 	$(MANAGE) makemigrations
 
@@ -25,9 +26,3 @@ superuser:
 
 run:
 	$(MANAGE) runserver
-
-test:
-	$(MANAGE) test $(WORKDIR)
-
-shell:
-	$(MANAGE) shell
