@@ -1,3 +1,15 @@
 from django.contrib import admin
 
-# Register your models here.
+from core.admin import BaseAdmin
+from customers.models import Customer
+
+
+@admin.register(Customer)
+class CustomerAdmin(BaseAdmin):
+    """Способ отображения поста в админке."""
+
+    list_display = (
+        'pk',
+        'email',
+    )
+    search_fields = ('email',)
